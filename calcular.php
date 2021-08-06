@@ -22,12 +22,12 @@ if(isset ($_REQUEST["nome"]) && isset ($_REQUEST["nota1"]) && isset ($_REQUEST["
         echo "<body style= 'background-color: lightgreen;'> </body>";
     }
     elseif($media <= 6 && $media>= 4){
-        echo "<h1 style='color: gold;'>O aluno $nome teve média $media. Está de recuperação!</h1>";
-        echo "<body style= 'background-color: darkgoldenrod;'> </body>";
+        echo "<h1 style='color: darkgoldenrod;'>O aluno $nome teve média $media. Está de recuperação!</h1>";
+        echo "<body style= 'background-color: gold;'> </body>";
     }
     else{
-        echo "<h1 style='color: red;'>O aluno $nome teve média $media. Reprovado!</h1>";
-        echo "<body style= 'background-color: darkred;'> </body>";
+        echo "<h1 style='color: darkred;'>O aluno $nome teve média $media. Reprovado!</h1>";
+        echo "<body style= 'background-color: red;'> </body>";
     }
 } else{
     echo "Você não prencheu os campos corretamente";

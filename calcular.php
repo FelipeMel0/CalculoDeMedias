@@ -4,7 +4,7 @@
         align-items: center;
         justify-content: center;
         font-family: 'Roboto Condensed', sans-serif;
-        color: darkred;
+        
     }
 </style>
 <?php
@@ -25,7 +25,7 @@ if (isset($_REQUEST["nome"]) && isset($_REQUEST["nota1"]) && isset($_REQUEST["no
         echo "<body style= 'background-color: gold;'> </body>";
     } else {
         echo "<h1 style='color: darkred;'>O aluno $nome teve média $media. Reprovado!</h1>";
-        echo "<body style= 'background-color: red;'> </body>";
+        echo "<body style= 'background-color: rgb(255, 58, 58);'> </body>";
     }
 } else {
     echo "Você não prencheu os campos corretamente";
